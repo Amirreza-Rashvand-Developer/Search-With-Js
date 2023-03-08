@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "SourceSansPro-Regular";
+    src: url("../fonts/SourceSansPro/SourceSansPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "SourceSansPro-SemiBold";
+    src: url("../fonts/SourceSansPro/SourceSansPro-SemiBold.ttf") format("truetype");
+}

@@ -1,0 +1,115 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "SourceSansPro-Regular";
+  line-height: 1.6;
+  font-size: 1.6rem;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background: #eff6ff;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.product {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: #ffffff;
+  width: 80%;
+  height: 8rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  overflow-y: scroll;
+  transition: 0.4s;
+}
+.product::-webkit-scrollbar {
+  display: none;
+}
+.product .product__search-box {
+  display: flex;
+  align-items: center;
+  border: 0.2rem solid #1f2937;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.product .product__search-box .product__search-icon {
+  font-size: 2rem;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.product .product__search-box .product__search-icon:hover {
+  color: #0284c7;
+}
+.product .product__search-box .product__input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  flex-grow: 1;
+  font-family: "SourceSansPro-Regular";
+  color: #6b7280;
+  font-size: 1.4rem;
+  margin-left: 1rem;
+}
+
+.show {
+  height: 50rem;
+}
+
+.product__list {
+  display: flex;
+  flex-direction: column;
+}
+.product__list .product-item {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.product__list .product-item:last-child {
+  margin-bottom: 0;
+}
+.product__list .product-item:first-child {
+  margin-top: 1.5rem;
+}
+.product__list .product-item .product-item__img {
+  width: 10rem;
+}
+.product__list .product-item .product-item__info {
+  margin-left: 2rem;
+}
+.product__list .product-item .product-item__info .product-item__name {
+  cursor: pointer;
+  color: #18181b;
+  transition: 0.4s;
+  font-family: "SourceSansPro-SemiBold";
+}
+.product__list .product-item .product-item__info .product-item__name:hover {
+  color: #075985;
+}
+.product__list .product-item .product-item__info .product-item__price {
+  color: #4b5563;
+}
+
+@media screen and (min-width: 768px) {
+  .product {
+    width: 50rem;
+  }
+}/*# sourceMappingURL=app.css.map */
